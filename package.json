@@ -26,5 +26,13 @@
   },
   "dependencies": {
     "jest": "^23.6.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreyShimkov/project-lvl1-s344.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AndreyShimkov/project-lvl1-s344/issues"
+  },
+  "homepage": "https://github.com/AndreyShimkov/project-lvl1-s344#readme"
 }
