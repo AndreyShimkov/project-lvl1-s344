@@ -5,4 +5,4 @@
 
 [![Build Status](https://travis-ci.org/AndreyShimkov/project-lvl1-s344.svg?branch=master)](https://travis-ci.org/AndreyShimkov/project-lvl1-s344)
 ##
-[![asciicast](https://asciinema.org/a/v1F24pyrdEpFR3CKCsdt7V2wz)](https://asciinema.org/a/v1F24pyrdEpFR3CKCsdt7V2wz)
+[![asciicast](https://asciinema.org/a/v1F24pyrdEpFR3CKCsdt7V2wz.png)](https://asciinema.org/a/v1F24pyrdEpFR3CKCsdt7V2wz)
