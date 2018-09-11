@@ -5,4 +5,8 @@
 
 [![Build Status](https://travis-ci.org/AndreyShimkov/project-lvl1-s344.svg?branch=master)](https://travis-ci.org/AndreyShimkov/project-lvl1-s344)
 ##
+Brain Games Even
 [![asciicast](https://asciinema.org/a/v1F24pyrdEpFR3CKCsdt7V2wz.png)](https://asciinema.org/a/v1F24pyrdEpFR3CKCsdt7V2wz)
+
+Brain Games Calc
+[![asciicast](https://asciinema.org/a/1uOfd4UjSy0PTJhhe8eCIBnVA.png)](https://asciinema.org/a/1uOfd4UjSy0PTJhhe8eCIBnVA)
