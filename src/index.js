@@ -23,11 +23,11 @@ const askQuestion = (num, name) => {
   checkAnswer(answer, correctAnswer, name);
 };
 
-const generateRandomNumber = () => Math.random() * 100;
+const generateRandomNumber = () => Math.floor(Math.random() * 30);
 
 export const brainGamesEven = (name, rounds) => {
   let number;
-  for (let i = 1; i < rounds; i += 1) {
+  for (let i = 1; i <= rounds; i += 1) {
     number = generateRandomNumber();
     askQuestion(number, name);
   }
