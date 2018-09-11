@@ -2,7 +2,7 @@
 import readlineSync from 'readline-sync';
 
 const rounds = 3;
-const maxNumber = 100;
+const maxNumber = 30;
 const maxOperations = 3;
 
 export const askName = () => {
@@ -48,7 +48,7 @@ export const brainGamesCalc = (name) => {
         correctAnswer = number1 * number2;
         break;
     }
-    checkAnswer(question, correctAnswer, name);
+    checkAnswer(question, `${correctAnswer}`, name);
   }
 };
 
