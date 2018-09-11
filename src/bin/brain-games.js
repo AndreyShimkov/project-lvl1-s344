@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 
-import { askName } from '..'
+/* eslint linebreak-style: ["error", "windows"] */
 
-console.log("Welcome to the Brain Games!");
+import askName from '..';
+
+console.log('Welcome to the Brain Games!');
 
 askName();
