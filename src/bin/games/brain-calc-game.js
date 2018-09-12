@@ -5,7 +5,7 @@ const maxOperations = 3;
 
 export const gameRules = 'What is the result of the expression?';
 
-export const brainGameCalc = (name) => {
+export const brainGamesCalc = (name) => {
   const number1 = generateRandomNumber();
   const number2 = generateRandomNumber();
   const operation = generateRandomNumber(maxOperations);
