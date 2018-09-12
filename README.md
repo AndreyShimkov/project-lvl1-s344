@@ -13,3 +13,6 @@ Brain Games Calc
 
 Brain Games Gcd
 [![asciicast](https://asciinema.org/a/eAHKnTVPtUS8ucMgCYjKRRZoB.png)](https://asciinema.org/a/eAHKnTVPtUS8ucMgCYjKRRZoB)
+
+Brain Games Balance
+[![asciicast](https://asciinema.org/a/KUkrI2nEF08wXtjzfeEWHTRwp.png)](https://asciinema.org/a/KUkrI2nEF08wXtjzfeEWHTRwp)
