@@ -3,8 +3,6 @@ import readlineSync from 'readline-sync';
 
 const rounds = 3;
 const maxNumber = 30;
-const maxBalance = 9999;
-const maxOperations = 3;
 
 export const askName = () => {
   const userName = readlineSync.question('May I have your name? ');
@@ -12,9 +10,12 @@ export const askName = () => {
   return userName;
 };
 
-const checkAnswer = (question, correctAnswer, name) => {
+export const askQuestion = (question) => {
   console.log(`Question: ${question}`);
-  const answer = readlineSync.question('Your answer: ');
+  return readlineSync.question('Your answer: ');
+};
+
+export const checkAnswer = (answer, correctAnswer, name) => {
   if (answer === correctAnswer) {
     console.log('Correct!');
   } else {
@@ -23,89 +24,14 @@ const checkAnswer = (question, correctAnswer, name) => {
   }
 };
 
-const generateRandomNumber = num => Math.floor(Math.random() * num + 1);
+export const generateRandomNumber = (num = maxNumber) => Math.floor(Math.random() * num + 1);
 
-export const brainGamesCalc = (name) => {
-  let number1;
-  let number2;
-  let operation;
-  let correctAnswer;
-  let question;
+export const brainGamesMain = (gameRules, mainGameBlock) => {
+  console.log('Welcome to the Brain Games!');
+  console.log(gameRules);
+  const name = askName();
   for (let i = 1; i <= rounds; i += 1) {
-    number1 = generateRandomNumber(maxNumber);
-    number2 = generateRandomNumber(maxNumber);
-    operation = generateRandomNumber(maxOperations);
-    switch (operation) {
-      case 1:
-        question = `${number1} + ${number2}`;
-        correctAnswer = number1 + number2;
-        break;
-      case 2:
-        question = `${number1} - ${number2}`;
-        correctAnswer = number1 - number2;
-        break;
-      default:
-        question = `${number1} * ${number2}`;
-        correctAnswer = number1 * number2;
-        break;
-    }
-    checkAnswer(question, `${correctAnswer}`, name);
+    mainGameBlock(name);
   }
-};
-
-export const brainGamesEven = (name) => {
-  let question;
-  let correctAnswer;
-  for (let i = 1; i <= rounds; i += 1) {
-    question = generateRandomNumber(maxNumber);
-    correctAnswer = question % 2 !== 0 ? 'no' : 'yes';
-    checkAnswer(question, correctAnswer, name);
-  }
-};
-
-export const brainGamesGcd = (name) => {
-  let number1;
-  let number2;
-  const findGcd = (num1, num2) => {
-    if (num1 === num2 || num2 === 0) {
-      return num1;
-    }
-    const maxNum = Math.max(num1, num2);
-    const minNum = Math.min(num1, num2);
-    const remainder = maxNum % minNum;
-    return findGcd(minNum, remainder);
-  };
-  for (let i = 1; i <= rounds; i += 1) {
-    number1 = generateRandomNumber(maxNumber);
-    number2 = generateRandomNumber(maxNumber);
-    checkAnswer(`${number1}  ${number2}`, `${findGcd(number1, number2)}`, name);
-  }
-};
-
-const funcBalance = (num) => {
-  let sumNum = 0;
-  for (let i = 0; i < num.length; i += 1) {
-    sumNum += Number(num[i]);
-  }
-  const baseNum = Math.floor(sumNum / num.length);
-  const remain = sumNum % num.length;
-  const subBalance = (acc, subAcc) => {
-    if (acc.length >= num.length) {
-      return acc;
-    }
-    if (subAcc > 0) {
-      return subBalance(`${baseNum + 1}${acc}`, subAcc - 1);
-    }
-    return subBalance(`${baseNum}${acc}`, 0);
-  };
-  return subBalance('', remain);
-};
-
-export const brainGamesBalance = (name) => {
-  let balance;
-  for (let i = 1; i <= rounds; i += 1) {
-    balance = generateRandomNumber(maxBalance).toString();
-    const correctAnswer = funcBalance(balance);
-    checkAnswer(balance, correctAnswer, name);
-  }
+  console.log(`Congratulations, ${name}`);
 };
