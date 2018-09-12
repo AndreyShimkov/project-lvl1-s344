@@ -3,6 +3,7 @@ import readlineSync from 'readline-sync';
 
 const rounds = 3;
 const maxNumber = 30;
+const maxBalance = 9999;
 const maxOperations = 3;
 
 export const askName = () => {
@@ -78,5 +79,33 @@ export const brainGamesGcd = (name) => {
     number1 = generateRandomNumber(maxNumber);
     number2 = generateRandomNumber(maxNumber);
     checkAnswer(`${number1}  ${number2}`, `${findGcd(number1, number2)}`, name);
+  }
+};
+
+const funcBalance = (num) => {
+  let sumNum = 0;
+  for (let i = 0; i < num.length; i += 1) {
+    sumNum += Number(num[i]);
+  }
+  const baseNum = Math.floor(sumNum / num.length);
+  const remain = sumNum % num.length;
+  const subBalance = (acc, subAcc) => {
+    if (acc.length >= num.length) {
+      return acc;
+    }
+    if (subAcc > 0) {
+      return subBalance(`${baseNum + 1}${acc}`, subAcc - 1);
+    }
+    return subBalance(`${baseNum}${acc}`, 0);
+  };
+  return subBalance('', remain);
+};
+
+export const brainGamesBalance = (name) => {
+  let balance;
+  for (let i = 1; i <= rounds; i += 1) {
+    balance = generateRandomNumber(maxBalance).toString();
+    const correctAnswer = funcBalance(balance);
+    checkAnswer(balance, correctAnswer, name);
   }
 };
