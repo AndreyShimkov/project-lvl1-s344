@@ -26,7 +26,7 @@ const findBalance = (num) => {
 };
 
 export const brainGamesBalance = (name) => {
-  const question = generateRandomNumber(maxBalance);
+  const question = `${generateRandomNumber(maxBalance)}`;
   const userAnswer = askQuestion(question);
   const correctAnswer = findBalance(question);
   checkAnswer(userAnswer, correctAnswer, name);
