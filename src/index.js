@@ -61,3 +61,22 @@ export const brainGamesEven = (name) => {
     checkAnswer(question, correctAnswer, name);
   }
 };
+
+export const brainGamesGcd = (name) => {
+  let number1;
+  let number2;
+  const findGcd = (num1, num2) => {
+    if (num1 === num2 || num2 === 0) {
+      return num1;
+    }
+    const maxNum = Math.max(num1, num2);
+    const minNum = Math.min(num1, num2);
+    const remainder = maxNum % minNum;
+    return findGcd(minNum, remainder);
+  };
+  for (let i = 1; i <= rounds; i += 1) {
+    number1 = generateRandomNumber(maxNumber);
+    number2 = generateRandomNumber(maxNumber);
+    checkAnswer(`${number1}  ${number2}`, `${findGcd(number1, number2)}`, name);
+  }
+};
