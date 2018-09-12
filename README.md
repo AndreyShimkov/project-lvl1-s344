@@ -10,3 +10,6 @@ Brain Games Even
 
 Brain Games Calc
 [![asciicast](https://asciinema.org/a/1uOfd4UjSy0PTJhhe8eCIBnVA.png)](https://asciinema.org/a/1uOfd4UjSy0PTJhhe8eCIBnVA)
+
+Brain Games Gcd
+[![asciicast](https://asciinema.org/a/eAHKnTVPtUS8ucMgCYjKRRZoB.png)](https://asciinema.org/a/eAHKnTVPtUS8ucMgCYjKRRZoB)
