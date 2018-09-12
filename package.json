@@ -1,6 +1,6 @@
 {
   "name": "brain_games_avs",
-  "version": "1.7.5",
+  "version": "1.7.6",
   "description": "First project from Hexlet",
   "main": "index.js",
   "bin": {
