@@ -35,9 +35,10 @@ export const brainGamesMain = (gameRules, mainGameBlock) => {
   console.log(gameRules);
   const name = askName();
   for (let i = 1; i <= rounds; i += 1) {
-    const gamePair = mainGameBlock();
-    const userAnswer = askQuestion(gameQuestion(gamePair));
-    const correctAnswer = gameAnswer(gamePair);
+    const gamePairQuestionAnswer = mainGameBlock();
+    const currentQuestion = gameQuestion(gamePairQuestionAnswer);
+    const userAnswer = askQuestion(currentQuestion);
+    const correctAnswer = gameAnswer(gamePairQuestionAnswer);
     checkAnswer(userAnswer, correctAnswer, name);
   }
   console.log(`Congratulations, ${name}`);
