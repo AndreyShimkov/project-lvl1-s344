@@ -16,7 +16,7 @@ const brainPrimePair = () => {
       }
       return num % acc === 0 ? 'no' : funcIsPrime(acc + 1, num);
     };
-    return funcIsPrime(1, number);
+    return funcIsPrime(2, number);
   };
 
   const correctAnswer = isPrime(question);
