@@ -7,10 +7,7 @@ const maxBalance = 9999;
 
 const brainBalancePair = () => {
   const findBalance = (num) => {
-    let sumNum = 0;
-    for (let i = 0; i < num.length; i += 1) {
-      sumNum += Number(num[i]);
-    }
+    const sumNum = Object.keys(num).reduce((acc, value) => acc + Number(value), 0);
     const baseNum = Math.floor(sumNum / num.length);
     const remain = sumNum % num.length;
 
