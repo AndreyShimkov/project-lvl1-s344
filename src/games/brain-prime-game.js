@@ -1,7 +1,7 @@
 
 import { brainGamesMain, generateRandomNumber, cons } from '..';
 
-const maxNumber = 9999;
+const maxNumber = 999;
 
 const gameRules = 'Is this number prime?';
 
