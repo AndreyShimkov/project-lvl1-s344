@@ -4,6 +4,10 @@ import readlineSync from 'readline-sync';
 const rounds = 3;
 const maxNumber = 30;
 
+export const cons = (a, b) => f => f(a, b);
+const gameQuestion = f => f(a => a);
+const gameAnswer = f => f((a, b) => b);
+
 export const askName = () => {
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}`);
@@ -31,7 +35,10 @@ export const brainGamesMain = (gameRules, mainGameBlock) => {
   console.log(gameRules);
   const name = askName();
   for (let i = 1; i <= rounds; i += 1) {
-    mainGameBlock(name);
+    const gamePair = mainGameBlock();
+    const userAnswer = askQuestion(gameQuestion(gamePair));
+    const correctAnswer = gameAnswer(gamePair);
+    checkAnswer(userAnswer, correctAnswer, name);
   }
   console.log(`Congratulations, ${name}`);
 };

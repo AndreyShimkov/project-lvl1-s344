@@ -1,7 +1,5 @@
 
-import {
-  brainGamesMain, generateRandomNumber, askQuestion, checkAnswer,
-} from '../..';
+import { brainGamesMain, generateRandomNumber, cons } from '../..';
 
 const gameRules = 'Balance the given number.';
 
@@ -27,11 +25,9 @@ const findBalance = (num) => {
   return subBalance('', remain);
 };
 
-const brainGamesBalance = (name) => {
-  const question = `${generateRandomNumber(maxBalance)}`;
-  const userAnswer = askQuestion(question);
-  const correctAnswer = findBalance(question);
-  checkAnswer(userAnswer, correctAnswer, name);
-};
+const question = `${generateRandomNumber(maxBalance)}`;
+const correctAnswer = findBalance(question);
+
+const brainGamesBalance = () => cons(question, correctAnswer);
 
 export default () => brainGamesMain(gameRules, brainGamesBalance);
