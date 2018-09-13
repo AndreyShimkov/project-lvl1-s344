@@ -28,3 +28,4 @@ Brain Games Balance
 [![asciicast](https://asciinema.org/a/KUkrI2nEF08wXtjzfeEWHTRwp.png)](https://asciinema.org/a/KUkrI2nEF08wXtjzfeEWHTRwp)
 
 Brain Games Progression
+[![asciicast](https://asciinema.org/a/odCxs59jFn1lNK3PdDgNzExvK.png)](https://asciinema.org/a/odCxs59jFn1lNK3PdDgNzExvK)
