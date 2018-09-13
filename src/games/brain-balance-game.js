@@ -1,11 +1,11 @@
 
-import { brainGamesMain, generateRandomNumber, cons } from '../..';
+import { brainGamesMain, generateRandomNumber, cons } from '..';
 
 const gameRules = 'Balance the given number.';
 
 const maxBalance = 9999;
 
-const brainGamesBalance = () => {
+const brainBalancePair = () => {
   const findBalance = (num) => {
     let sumNum = 0;
     for (let i = 0; i < num.length; i += 1) {
@@ -31,4 +31,4 @@ const brainGamesBalance = () => {
   return cons(question, correctAnswer);
 };
 
-export default () => brainGamesMain(gameRules, brainGamesBalance);
+export default () => brainGamesMain(gameRules, brainBalancePair);

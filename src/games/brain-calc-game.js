@@ -1,11 +1,11 @@
 
-import { brainGamesMain, generateRandomNumber, cons } from '../..';
+import { brainGamesMain, generateRandomNumber, cons } from '..';
 
 const maxOperations = 3;
 
 const gameRules = 'What is the result of the expression?';
 
-const brainGamesCalc = () => {
+const brainCalcPair = () => {
   const number1 = generateRandomNumber();
   const number2 = generateRandomNumber();
   const operation = generateRandomNumber(maxOperations);
@@ -26,4 +26,4 @@ const brainGamesCalc = () => {
   return cons(question, correctAnswer);
 };
 
-export default () => brainGamesMain(gameRules, brainGamesCalc);
+export default () => brainGamesMain(gameRules, brainCalcPair);

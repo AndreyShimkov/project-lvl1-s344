@@ -1,9 +1,9 @@
 
-import { brainGamesMain, generateRandomNumber, cons } from '../..';
+import { brainGamesMain, generateRandomNumber, cons } from '..';
 
 const gameRules = 'Find the greatest common divisor of given numbers.';
 
-const brainGamesGcd = () => {
+const brainGcdPair = () => {
   const findGcd = (num1, num2) => {
     if (num1 === num2 || num2 === 0) {
       return num1;
@@ -21,4 +21,4 @@ const brainGamesGcd = () => {
   return cons(question, correctAnswer);
 };
 
-export default () => brainGamesMain(gameRules, brainGamesGcd);
+export default () => brainGamesMain(gameRules, brainGcdPair);
