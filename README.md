@@ -32,3 +32,4 @@ Brain Games Progression
 [![asciicast](https://asciinema.org/a/odCxs59jFn1lNK3PdDgNzExvK.png)](https://asciinema.org/a/odCxs59jFn1lNK3PdDgNzExvK)
 
 Brain Games Prime
+[![asciicast](https://asciinema.org/a/ju5GrYSQFGnoNWnFHhMtqqliy.png)](https://asciinema.org/a/ju5GrYSQFGnoNWnFHhMtqqliy)
