@@ -18,7 +18,7 @@ const brainProgressionPair = () => {
     return generateProgression(acc + 1, `${progression} ${number}`);
   };
   const question = generateProgression(0, '');
-  const correctAnswer = firstProgressionNumber + progressionDiff * missedNumber;
+  const correctAnswer = `${firstProgressionNumber + progressionDiff * missedNumber}`;
   return cons(question, correctAnswer);
 };
 
