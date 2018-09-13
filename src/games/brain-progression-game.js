@@ -14,7 +14,7 @@ const brainProgressionPair = () => {
     if (acc > maxProgression) {
       return progression;
     }
-    const number = (acc === missedNumber) ? '.. ' : firstProgressionNumber + progressionDiff * acc;
+    const number = (acc === missedNumber) ? '..' : firstProgressionNumber + progressionDiff * acc;
     return generateProgression(acc + 1, `${progression} ${number}`);
   };
   const question = generateProgression(0, '');
