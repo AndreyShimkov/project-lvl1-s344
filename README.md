@@ -5,7 +5,7 @@
 - Brain Games Even;
 - Brain Games Calc;
 - Brain Games Gcd;
-- Brain Games Balance;
+- Brain Games Balance
 
 ##
 [![Maintainability](https://api.codeclimate.com/v1/badges/eca08ba4663af6d9a0e7/maintainability)](https://codeclimate.com/github/AndreyShimkov/project-lvl1-s344/maintainability)
