@@ -14,12 +14,12 @@ export const askName = () => {
   return userName;
 };
 
-export const askQuestion = (question) => {
+const askQuestion = (question) => {
   console.log(`Question: ${question}`);
   return readlineSync.question('Your answer: ');
 };
 
-export const checkAnswer = (answer, correctAnswer, name) => {
+const checkAnswer = (answer, correctAnswer, name) => {
   if (answer === correctAnswer) {
     console.log('Correct!');
   } else {
