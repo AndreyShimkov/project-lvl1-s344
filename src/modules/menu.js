@@ -22,8 +22,9 @@ const greetings = () => {
 
 let gameNumber;
 
+greetings();
+
 do {
-  greetings();
   gameNumber = readlineSync.question('Select a game (number): ');
   if (gameNumber === '0') {
     console.log('Bye.');
