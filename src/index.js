@@ -41,5 +41,5 @@ export const brainGamesMain = (gameRules, mainGameBlock) => {
     const correctAnswer = gameAnswer(gamePairQuestionAnswer);
     checkAnswer(userAnswer, correctAnswer, name);
   }
-  console.log(`Congratulations, ${name}`);
+  console.log(`Congratulations, ${name} \n`);
 };

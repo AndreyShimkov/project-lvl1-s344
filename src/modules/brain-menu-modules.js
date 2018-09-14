@@ -22,9 +22,9 @@ const greetings = () => {
 
 let gameNumber;
 
-greetings();
-
+export default () => {
 do {
+  greetings();
   gameNumber = readlineSync.question('Select a game (number): ');
   if (gameNumber === '0') {
     console.log('Bye.');
@@ -41,6 +41,7 @@ do {
   } else if (gameNumber === '6') {
     brainProgressionStart();
   } else {
-    console.log('Incorrect number. Please try again.');
+    console.log('Incorrect number. Please try again. \n');
   }
 } while (gameNumber !== '0');
+};
