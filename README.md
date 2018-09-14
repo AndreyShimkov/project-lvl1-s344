@@ -22,24 +22,30 @@
 
 #### Brain Games Balance
 > brain-balance 
+
 [![asciicast](https://asciinema.org/a/KUkrI2nEF08wXtjzfeEWHTRwp.png)](https://asciinema.org/a/KUkrI2nEF08wXtjzfeEWHTRwp)
 
 #### Brain Games Calc
 > brain-calc
+
 [![asciicast](https://asciinema.org/a/1uOfd4UjSy0PTJhhe8eCIBnVA.png)](https://asciinema.org/a/1uOfd4UjSy0PTJhhe8eCIBnVA)
 
 #### Brain Games Even
 > brain-even
+
 [![asciicast](https://asciinema.org/a/v1F24pyrdEpFR3CKCsdt7V2wz.png)](https://asciinema.org/a/v1F24pyrdEpFR3CKCsdt7V2wz)
 
 #### Brain Games Gcd
 > brain-gcd
+
 [![asciicast](https://asciinema.org/a/eAHKnTVPtUS8ucMgCYjKRRZoB.png)](https://asciinema.org/a/eAHKnTVPtUS8ucMgCYjKRRZoB)
 
 #### Brain Games Prime
 > brain-prime
+
 [![asciicast](https://asciinema.org/a/ju5GrYSQFGnoNWnFHhMtqqliy.png)](https://asciinema.org/a/ju5GrYSQFGnoNWnFHhMtqqliy)
 
 #### Brain Games Progression
 > brain-progression
+
 [![asciicast](https://asciinema.org/a/odCxs59jFn1lNK3PdDgNzExvK.png)](https://asciinema.org/a/odCxs59jFn1lNK3PdDgNzExvK)
