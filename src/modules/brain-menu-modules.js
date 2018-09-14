@@ -23,25 +23,26 @@ const greetings = () => {
 let gameNumber;
 
 export default () => {
-do {
-  greetings();
-  gameNumber = readlineSync.question('Select a game (number): ');
-  if (gameNumber === '0') {
-    console.log('Bye.');
-  } else if (gameNumber === '1') {
-    brainBalanceStart();
-  } else if (gameNumber === '2') {
-    brainCalcStart();
-  } else if (gameNumber === '3') {
-    brainEvenStart();
-  } else if (gameNumber === '4') {
-    brainGcdStart();
-  } else if (gameNumber === '5') {
-    brainPrimeStart();
-  } else if (gameNumber === '6') {
-    brainProgressionStart();
-  } else {
-    console.log('Incorrect number. Please try again. \n');
-  }
-} while (gameNumber !== '0');
+  do {
+    greetings();
+    gameNumber = readlineSync.question('Select a game (number): ');
+    console.log('');
+    if (gameNumber === '0') {
+      console.log('Bye.');
+    } else if (gameNumber === '1') {
+      brainBalanceStart();
+    } else if (gameNumber === '2') {
+      brainCalcStart();
+    } else if (gameNumber === '3') {
+      brainEvenStart();
+    } else if (gameNumber === '4') {
+      brainGcdStart();
+    } else if (gameNumber === '5') {
+      brainPrimeStart();
+    } else if (gameNumber === '6') {
+      brainProgressionStart();
+    } else {
+      console.log('Incorrect number. Please try again.');
+    }
+  } while (gameNumber !== '0');
 };
