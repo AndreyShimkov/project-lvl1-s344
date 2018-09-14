@@ -20,12 +20,14 @@ const greetings = () => {
   console.log('0 - Exit');
 };
 
-const changeTheGame = () => {
-  const gameNumber = readlineSync.question('Select a game (number): ');
+let gameNumber;
+
+do {
+  greetings();
+  gameNumber = readlineSync.question('Select a game (number): ');
   if (gameNumber === '0') {
     console.log('Bye.');
-    return '0';
-  } if (gameNumber === '1') {
+  } else if (gameNumber === '1') {
     brainBalanceStart();
   } else if (gameNumber === '2') {
     brainCalcStart();
@@ -40,13 +42,4 @@ const changeTheGame = () => {
   } else {
     console.log('Incorrect number. Please try again.');
   }
-  changeTheGame();
-  return 1;
-};
-
-const runMenu = () => {
-  greetings();
-  changeTheGame();
-};
-
-runMenu();
+} while (gameNumber !== '0');
