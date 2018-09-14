@@ -15,9 +15,9 @@
 - Brain Games Progression.
 
 ## Using
-> brain-menu
+> brain-games
 
-[![asciicast](https://asciinema.org/a/0k7gGxgBVvze4qdjufGNVUXey.png)](https://asciinema.org/a/0k7gGxgBVvze4qdjufGNVUXey)
+[![asciicast](https://asciinema.org/a/3ZcV5EJt1kMEhZNRK6honN8oC.png)](https://asciinema.org/a/3ZcV5EJt1kMEhZNRK6honN8oC)
 
 
 #### Brain Games Balance
