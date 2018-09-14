@@ -3,20 +3,23 @@ import { brainGamesMain, generateRandomNumber, cons } from '..';
 
 const gameRules = 'What number is missing in this progression?';
 
-const maxProgression = 10;
+const progressionLength = 10;
 
 const brainProgressionPair = () => {
-  const missedNumber = generateRandomNumber(maxProgression);
+  const missedNumber = generateRandomNumber(progressionLength);
+
   const firstProgressionNumber = generateRandomNumber();
   const progressionDiff = generateRandomNumber();
+  const progression = n => firstProgressionNumber + (n - 1) * progressionDiff;
 
-  const generateProgression = (acc, progression) => {
-    if (acc > maxProgression) {
-      return progression;
+  const generateProgression = (num, result) => {
+    if (num > progressionLength) {
+      return result;
     }
-    const number = (acc === missedNumber) ? '..' : firstProgressionNumber + progressionDiff * acc;
-    return generateProgression(acc + 1, `${progression} ${number}`);
+    const number = (num === missedNumber) ? '..' : progression(num);
+    return generateProgression(num + 1, `${result} ${number}`);
   };
+
   const question = generateProgression(0, '');
   const correctAnswer = `${firstProgressionNumber + progressionDiff * missedNumber}`;
   return cons(question, correctAnswer);

@@ -10,13 +10,13 @@ const brainPrimePair = () => {
   const question = generateRandomNumber(maxNumber);
 
   const isPrime = (number) => {
-    const funcIsPrime = (acc, num) => {
+    const iter = (acc, num) => {
       if (acc > num / 2) {
         return 'yes';
       }
-      return num % acc === 0 ? 'no' : funcIsPrime(acc + 1, num);
+      return num % acc === 0 ? 'no' : iter(acc + 1, num);
     };
-    return funcIsPrime(2, number);
+    return iter(2, number);
   };
 
   const correctAnswer = isPrime(question);
