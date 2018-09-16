@@ -12,14 +12,14 @@ const brainPrimePair = () => {
   const isPrime = (number) => {
     const iter = (acc, num) => {
       if (acc > num / 2) {
-        return 'yes';
+        return true;
       }
-      return num % acc === 0 ? 'no' : iter(acc + 1, num);
+      return num % acc === 0 ? false : iter(acc + 1, num);
     };
     return iter(2, number);
   };
 
-  const correctAnswer = isPrime(question);
+  const correctAnswer = isPrime(question) ? 'yes' : 'no';
 
   return cons(question, correctAnswer);
 };
