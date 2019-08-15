@@ -17,35 +17,35 @@
 ## Using
 > brain-games
 
-[![asciicast](https://asciinema.org/a/3ZcV5EJt1kMEhZNRK6honN8oC.png)](https://asciinema.org/a/3ZcV5EJt1kMEhZNRK6honN8oC)
+[![asciicast](https://asciinema.org/a/SCYDgzKKLoV5iSf6LluzMDEKu.png)](https://asciinema.org/a/SCYDgzKKLoV5iSf6LluzMDEKu)
 
 
 #### Brain Games Balance
 > brain-balance 
 
-[![asciicast](https://asciinema.org/a/KUkrI2nEF08wXtjzfeEWHTRwp.png)](https://asciinema.org/a/KUkrI2nEF08wXtjzfeEWHTRwp)
+[![asciicast](https://asciinema.org/a/tQn705BW6wH77LN0Qf7D4b1Ge.png)](https://asciinema.org/a/tQn705BW6wH77LN0Qf7D4b1Ge)
 
 #### Brain Games Calc
 > brain-calc
 
-[![asciicast](https://asciinema.org/a/1uOfd4UjSy0PTJhhe8eCIBnVA.png)](https://asciinema.org/a/1uOfd4UjSy0PTJhhe8eCIBnVA)
+[![asciicast](https://asciinema.org/a/EWRQqMtgre2kGN370LGMDnDwu.png)](https://asciinema.org/a/EWRQqMtgre2kGN370LGMDnDwu)
 
 #### Brain Games Even
 > brain-even
 
-[![asciicast](https://asciinema.org/a/v1F24pyrdEpFR3CKCsdt7V2wz.png)](https://asciinema.org/a/v1F24pyrdEpFR3CKCsdt7V2wz)
+[![asciicast](https://asciinema.org/a/McfhmSAE8P4vfA2laYgydj1ug.png)](https://asciinema.org/a/McfhmSAE8P4vfA2laYgydj1ug)
 
 #### Brain Games Gcd
 > brain-gcd
 
-[![asciicast](https://asciinema.org/a/eAHKnTVPtUS8ucMgCYjKRRZoB.png)](https://asciinema.org/a/eAHKnTVPtUS8ucMgCYjKRRZoB)
+[![asciicast](https://asciinema.org/a/sN8gJ2yND4iPnT7OOsVRZi3VS.png)](https://asciinema.org/a/sN8gJ2yND4iPnT7OOsVRZi3VS)
 
 #### Brain Games Prime
 > brain-prime
 
-[![asciicast](https://asciinema.org/a/ju5GrYSQFGnoNWnFHhMtqqliy.png)](https://asciinema.org/a/ju5GrYSQFGnoNWnFHhMtqqliy)
+[![asciicast](https://asciinema.org/a/NF7kVtVYFbb5hQRfBmyqA5jI1.png)](https://asciinema.org/a/NF7kVtVYFbb5hQRfBmyqA5jI1)
 
 #### Brain Games Progression
 > brain-progression
 
-[![asciicast](https://asciinema.org/a/odCxs59jFn1lNK3PdDgNzExvK.png)](https://asciinema.org/a/odCxs59jFn1lNK3PdDgNzExvK)
+[![asciicast](https://asciinema.org/a/pvwzavVy0rjoZrR4QQz7JnWzp.png)](https://asciinema.org/a/pvwzavVy0rjoZrR4QQz7JnWzp)
